@@ -5,149 +5,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bach Electrical & Control Instrumentation</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #0b2f63;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header img {
-      max-width: 100px;
-      margin-bottom: 1rem;
-    }
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      padding: 0;
-      margin: 0 0 1rem 0;
-      gap: 2rem;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 2rem 1rem;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .card i {
-      color: #0b2f63;
-      margin-bottom: 0.5rem;
-    }
-    form {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    input, textarea {
-      padding: 0.75rem;
-      font-size: 1rem;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      width: 100%;
-    }
-    button {
-      background-color: #0b2f63;
-      color: white;
-      border: none;
-      padding: 0.75rem;
-      font-size: 1rem;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #093057;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: #0b2f63;
-      color: white;
-    }
-    h1, h2 {
-      color: #0b2f63;
-    }
-  </style>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Bach Electrical & Control Instrumentation",
+    "url": "https://bach-eci.com",
+    "logo": "https://bach-eci.com/logo.png",
+    "email": "info@bach-eci.com",
+    "description": "Bach Electrical & Control Instrumentation provides professional EC&I services across the mining, energy, and industrial sectors in Mali. We offer design, installation, automation, maintenance, and technical training solutions.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bamako",
+      "addressCountry": "ML"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@bach-eci.com",
+      "contactType": "customer service",
+      "availableLanguage": ["en", "fr"]
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/bach-eci"
+    ]
+  }
+  </script>
 </head>
-<body onload="AOS.init(); feather.replace();">
-  <header>
-    <img src="logo.png" alt="Bach EC&I Logo">
-    <h1>Bach Electrical & Control Instrumentation</h1>
-    <p>Smart Solutions for Industrial Efficiency</p>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="index-fr.html">Français</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="about" data-aos="fade-up">
-      <h2>About Us</h2>
-      <p>Based in Mali, we deliver reliable electrical and control instrumentation solutions for mining, energy, and industry. With 12+ years of experience, our mission is to improve operational safety and performance through intelligent systems.</p>
-    </section>
-
-    <section id="services" data-aos="fade-up">
-      <h2>Our Services</h2>
-      <div class="grid">
-        <div class="card" data-aos="fade-up"><i data-feather="cpu"></i><h3>Electrical Installation</h3><p>LV/MV systems, power distribution and site-wide installations.</p></div>
-        <div class="card" data-aos="fade-up"><i data-feather="sliders"></i><h3>Instrumentation & Control</h3><p>PLC, SCADA, and DCS integration for automated process control.</p></div>
-        <div class="card" data-aos="fade-up"><i data-feather="settings"></i><h3>Mine Automation</h3><p>Complete automation for pumps, conveyors, blasting and safety systems.</p></div>
-        <div class="card" data-aos="fade-up"><i data-feather="tool"></i><h3>Maintenance</h3><p>Preventive & corrective programs to reduce downtime and risk.</p></div>
-        <div class="card" data-aos="fade-up"><i data-feather="alert-triangle"></i><h3>Technical Support</h3><p>On-call fault diagnosis, field troubleshooting and calibration.</p></div>
-        <div class="card" data-aos="fade-up"><i data-feather="book-open"></i><h3>Training</h3><p>Hands-on and classroom training in electrical systems and automation.</p></div>
-      </div>
-    </section>
-
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact</h2>
-      <form name="contact" method="POST" data-netlify="true" action="thank-you.html">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Bach Electrical & Control Instrumentation. All rights reserved.
-  </footer>
+<body>
+  <h1>Bach Electrical & Control Instrumentation</h1>
+  <p>This is the structured version of the English homepage.</p>
 </body>
 </html>
