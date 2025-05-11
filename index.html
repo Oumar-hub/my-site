@@ -5,7 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bach Electrical & Control Instrumentation</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
   <style>
     body {
       margin: 0;
@@ -54,10 +57,11 @@
       padding: 1.5rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      text-align: center;
     }
-    .card:hover {
-      transform: translateY(-5px);
+    .card i {
+      color: #0b2f63;
+      margin-bottom: 0.5rem;
     }
     form {
       background: white;
@@ -98,7 +102,7 @@
     }
   </style>
 </head>
-<body>
+<body onload="AOS.init(); feather.replace();">
   <header>
     <img src="logo.png" alt="Bach EC&I Logo">
     <h1>Bach Electrical & Control Instrumentation</h1>
@@ -114,44 +118,26 @@
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <h2>About Us</h2>
       <p>Based in Mali, we deliver reliable electrical and control instrumentation solutions for mining, energy, and industry. With 12+ years of experience, our mission is to improve operational safety and performance through intelligent systems.</p>
     </section>
 
-    <section id="services">
+    <section id="services" data-aos="fade-up">
       <h2>Our Services</h2>
       <div class="grid">
-        <div class="card">
-          <h3>Electrical Installation</h3>
-          <p>LV/MV systems, power distribution and site-wide installations.</p>
-        </div>
-        <div class="card">
-          <h3>Instrumentation & Control</h3>
-          <p>PLC, SCADA, and DCS integration for automated process control.</p>
-        </div>
-        <div class="card">
-          <h3>Mine Automation</h3>
-          <p>Complete automation for pumps, conveyors, blasting and safety systems.</p>
-        </div>
-        <div class="card">
-          <h3>Maintenance</h3>
-          <p>Preventive & corrective programs to reduce downtime and risk.</p>
-        </div>
-        <div class="card">
-          <h3>Technical Support</h3>
-          <p>On-call fault diagnosis, field troubleshooting and calibration.</p>
-        </div>
-        <div class="card">
-          <h3>Training</h3>
-          <p>Hands-on and classroom training in electrical systems and automation.</p>
-        </div>
+        <div class="card" data-aos="fade-up"><i data-feather="cpu"></i><h3>Electrical Installation</h3><p>LV/MV systems, power distribution and site-wide installations.</p></div>
+        <div class="card" data-aos="fade-up"><i data-feather="sliders"></i><h3>Instrumentation & Control</h3><p>PLC, SCADA, and DCS integration for automated process control.</p></div>
+        <div class="card" data-aos="fade-up"><i data-feather="settings"></i><h3>Mine Automation</h3><p>Complete automation for pumps, conveyors, blasting and safety systems.</p></div>
+        <div class="card" data-aos="fade-up"><i data-feather="tool"></i><h3>Maintenance</h3><p>Preventive & corrective programs to reduce downtime and risk.</p></div>
+        <div class="card" data-aos="fade-up"><i data-feather="alert-triangle"></i><h3>Technical Support</h3><p>On-call fault diagnosis, field troubleshooting and calibration.</p></div>
+        <div class="card" data-aos="fade-up"><i data-feather="book-open"></i><h3>Training</h3><p>Hands-on and classroom training in electrical systems and automation.</p></div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <h2>Contact</h2>
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" method="POST" data-netlify="true" action="thank-you.html">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
