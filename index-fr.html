@@ -5,7 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bach Électrique & Instrumentation de Contrôle</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
   <style>
     body {
       margin: 0;
@@ -54,10 +57,11 @@
       padding: 1.5rem;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      text-align: center;
     }
-    .card:hover {
-      transform: translateY(-5px);
+    .card i {
+      color: #0b2f63;
+      margin-bottom: 0.5rem;
     }
     form {
       background: white;
@@ -97,37 +101,12 @@
       color: #0b2f63;
     }
   </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Bach Electrical & Control Instrumentation",
-  "url": "https://bach-eci.com",
-  "logo": "https://bach-eci.com/logo.png",
-  "email": "info@bach-eci.com",
-  "description": "Bach Electrical & Control Instrumentation provides professional EC&I services across the mining, energy, and industrial sectors in Mali. We offer design, installation, automation, maintenance, and technical training solutions.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Bamako",
-    "addressCountry": "ML"
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "info@bach-eci.com",
-    "contactType": "customer service",
-    "availableLanguage": ["en", "fr"]
-  },
-  "sameAs": [
-    "https://www.linkedin.com/company/bach-eci"
-  ]
-}
-</script>
 </head>
-<body>
+<body onload="AOS.init(); feather.replace();">
   <header>
     <img src="logo.png" alt="Logo Bach EC&I">
     <h1>Bach Électrique & Instrumentation de Contrôle</h1>
-    <p>Des Solutions Intelligentes pour l'Efficacité Industrielle</p>
+    <p>Des solutions intelligentes pour l'efficacité industrielle</p>
     <nav>
       <ul>
         <li><a href="#about">À propos</a></li>
@@ -139,44 +118,26 @@
   </header>
 
   <main>
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <h2>À propos de nous</h2>
       <p>Basée au Mali, notre entreprise fournit des solutions fiables en électricité et instrumentation de contrôle pour les secteurs minier, énergétique et industriel. Avec plus de 12 ans d'expérience, notre mission est d'améliorer la sécurité opérationnelle et la performance à travers des systèmes intelligents.</p>
     </section>
 
-    <section id="services">
+    <section id="services" data-aos="fade-up">
       <h2>Nos Services</h2>
       <div class="grid">
-        <div class="card">
-          <h3>Installation Électrique</h3>
-          <p>Systèmes BT/MT, distribution de puissance et installations industrielles complètes.</p>
-        </div>
-        <div class="card">
-          <h3>Instrumentation & Contrôle</h3>
-          <p>Intégration de PLC, SCADA et DCS pour le contrôle automatisé des processus.</p>
-        </div>
-        <div class="card">
-          <h3>Automatisation Minière</h3>
-          <p>Automatisation complète des pompes, convoyeurs, systèmes de tir et sécurité.</p>
-        </div>
-        <div class="card">
-          <h3>Maintenance</h3>
-          <p>Programmes préventifs et correctifs pour réduire les arrêts et les risques.</p>
-        </div>
-        <div class="card">
-          <h3>Support Technique</h3>
-          <p>Diagnostic sur appel, dépannage sur site et étalonnage d'instruments.</p>
-        </div>
-        <div class="card">
-          <h3>Formation</h3>
-          <p>Formations pratiques et en salle sur les systèmes électriques et l'automatisation.</p>
-        </div>
+        <div class="card" data-aos="fade-up"><i data-feather="cpu"></i><h3>Installation Électrique</h3><p>Systèmes BT/MT, distribution de puissance et installations complètes.</p></div>
+        <div class="card" data-aos="fade-up"><i data-feather="sliders"></i><h3>Instrumentation & Contrôle</h3><p>Intégration de PLC, SCADA, DCS pour l'automatisation des processus.</p></div>
+        <div class="card" data-aos="fade-up"><i data-feather="settings"></i><h3>Automatisation Minière</h3><p>Contrôle complet des pompes, convoyeurs, tirs et sécurité.</p></div>
+        <div class="card" data-aos="fade-up"><i data-feather="tool"></i><h3>Maintenance</h3><p>Programmes préventifs et correctifs pour réduire les risques.</p></div>
+        <div class="card" data-aos="fade-up"><i data-feather="alert-triangle"></i><h3>Support Technique</h3><p>Dépannage sur site, diagnostic, étalonnage des instruments.</p></div>
+        <div class="card" data-aos="fade-up"><i data-feather="book-open"></i><h3>Formation</h3><p>Formations pratiques et théoriques en électricité et automatisation.</p></div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <h2>Contact</h2>
-      <form name="contact-fr" method="POST" data-netlify="true">
+      <form name="contact-fr" method="POST" data-netlify="true" action="thank-you.html">
         <input type="text" name="name" placeholder="Votre nom" required />
         <input type="email" name="email" placeholder="Votre email" required />
         <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
