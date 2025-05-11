@@ -3,65 +3,165 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Bach Électrique & Instrumentation de Contrôle</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" />
-  
-  <meta name="description" content="Bach Electrical & Control Instrumentation provides expert electrical systems, automation, and instrumentation services in Mali.">
-  <meta property="og:title" content="Bach Electrical & Control Instrumentation" />
-  <meta property="og:description" content="Smart Solutions for Industrial Efficiency in Mining and Energy Sectors." />
-  <meta property="og:type" content="website" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <title>Bach Electrical & Control Instrumentation</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #0b2f63;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1rem 0;
+      gap: 2rem;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    form {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+    button {
+      background-color: #0b2f63;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #093057;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #0b2f63;
+      color: white;
+    }
+    h1, h2 {
+      color: #0b2f63;
+    }
+  </style>
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Bach EC&I Logo">
+    <h1>Bach Electrical & Control Instrumentation</h1>
+    <p>Smart Solutions for Industrial Efficiency</p>
     <nav>
       <ul>
-        <li><a href="#home">🏠 Accueil</a></li>
-        <li><a href="#services">🛠 Services</a></li>
-        <li><a href="#about">📘 À propos</a></li>
-        <li><a href="#contact">📞 Contact</a></li>
-        <li><a href="index.html"><img src="flag-uk.svg" alt="" style="height: 16px;"> English</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="index-fr.html">Français</a></li>
       </ul>
     </nav>
-    <div class="branding">
-      <img src="logo.png" alt="Logo" />
-      <h1>Bach Électrique & Instrumentation de Contrôle</h1>
-      <p>Solutions Intelligentes pour l’Efficacité Industrielle</p>
-    </div>
   </header>
+
   <main>
+    <section id="about">
+      <h2>À propos</h2>
+      <p>Based in Mali, we deliver reliable electrical and control instrumentation solutions for mining, energy, and industry. With 12+ years of experience, our mission is to improve operational safety and performance through intelligent systems.</p>
+    </section>
+
     <section id="services">
       <h2>Nos Services</h2>
-      <ul>
-        <li>Conception et Installation de Systèmes Électriques</li>
-        <li>Ingénierie en Instrumentation de Contrôle</li>
-        <li>Automatisation des Mines Souterraines</li>
-        <li>Maintenance et Gestion des Actifs</li>
-        <li>Installations Électriques Résidentielles et Industrielles</li>
-        <li>Formation et Renforcement des Capacités</li>
-        <li>Résolution de Problèmes Techniques et Dépannage</li>
-      </ul>
+      <div class="grid">
+        <div class="card">
+          <h3>Electrical Installation</h3>
+          <p>LV/MV systems, power distribution and site-wide installations.</p>
+        </div>
+        <div class="card">
+          <h3>Instrumentation & Control</h3>
+          <p>PLC, SCADA, and DCS integration for automated process control.</p>
+        </div>
+        <div class="card">
+          <h3>Mine Automation</h3>
+          <p>Complete automation for pumps, conveyors, blasting and safety systems.</p>
+        </div>
+        <div class="card">
+          <h3>Maintenance</h3>
+          <p>Preventive & corrective programs to reduce downtime and risk.</p>
+        </div>
+        <div class="card">
+          <h3>Technical Support</h3>
+          <p>On-call fault diagnosis, field troubleshooting and calibration.</p>
+        </div>
+        <div class="card">
+          <h3>Training</h3>
+          <p>Hands-on and classroom training in electrical systems and automation.</p>
+        </div>
+      </div>
     </section>
-    <section id="about">
-      <h2>À Propos</h2>
-      <p>Bach Électrique & Instrumentation de Contrôle est une entreprise basée au Mali, spécialisée dans les systèmes électriques, l’automatisation et la gestion des actifs. Nous nous engageons pour l’innovation, la sécurité et la performance industrielle.</p>
-    </section>
+
     <section id="contact">
       <h2>Contact</h2>
-      <form name="contact-fr" method="POST" data-netlify="true">
-        <input type="text" name="name" placeholder="Nom" required><br />
-        <input type="email" name="email" placeholder="Email" required><br />
-        <textarea name="message" placeholder="Votre message" required></textarea><br />
-        <button type="submit">Envoyer</button>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
       </form>
     </section>
   </main>
 
-<footer style="text-align:center; padding: 1em 0; background-color: #00264d; color: white; margin-top: 2em;">
-  <p>&copy; 2025 Bach Electrical & Control Instrumentation. All rights reserved.</p>
-</footer>
-
+  <footer>
+    &copy; 2025 Bach Electrical & Control Instrumentation. All rights reserved.
+  </footer>
 </body>
 </html>
